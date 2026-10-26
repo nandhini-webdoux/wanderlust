@@ -1,0 +1,116 @@
+
+/* General styling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #263238;
+}
+
+section {
+  scroll-margin-top: 65px;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #173b57;
+}
+
+/* Hero section */
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 15px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=85")
+    center / cover no-repeat;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 0 auto 20px;
+}
+
+.hero p {
+  margin-bottom: 28px;
+}
+
+/* Package cards */
+.package-img {
+  height: 230px;
+  object-fit: cover;
+}
+
+.card {
+  border: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card .btn {
+  margin-top: 8px;
+}
+
+/* Testimonials */
+.review-box {
+  max-width: 650px;
+  min-height: 180px;
+  padding: 35px 55px 55px;
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #173b57;
+}
+
+/* FAQ */
+#faq .accordion {
+  max-width: 850px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e7f2f8;
+  color: #173b57;
+}
+
+/* Contact */
+#contact .form-control {
+  padding: 12px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 576px) {
+  .hero {
+    min-height: 60vh;
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .package-img {
+    height: 210px;
+  }
+
+  .review-box {
+    padding: 30px 40px 55px;
+  }
+}
